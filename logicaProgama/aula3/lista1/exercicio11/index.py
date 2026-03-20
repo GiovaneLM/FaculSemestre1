@@ -4,3 +4,7 @@ Centígrados.
 Fórmula: Centígrados = ----------------------------
                                     9'''
 
+print("digite a temperatura atual em Fahrenheit para ser convertido : ")
+Fah = float(input())
+
+print("Resultado : ", ((Fah - 32)*5)/9,"°C")
