@@ -9,5 +9,5 @@ if(num1>num2):
     print("o maior numero digitado é " , num1)
 elif(num1<num2):
     print("o maior numero digitado é " , num2)
-elif(num1==num2):
+else :
     print("ambos os numeros tem o mesmo valor que é : " , num1)
