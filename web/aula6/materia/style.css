@@ -10,9 +10,23 @@ h1{
     text-transform: capitalize;/* uppercase - lowercase - capitalize */
     text-decoration: underline wavy;/* underline - overline - line-through - none (wavy)*/
     color: #0000ff;
+    text-align: center;/* left - center - right*/
 }
 
 p{
     font-size: 24px;
     line-height: 36px;
+    text-align: justify;
+}
+
+.destaque{
+    text-align: justify;
+}
+.animes{
+    list-style-position: inside; /*insede - outside*/
+    list-style-type: square;/* disc - circle - none - square*/
+    list-style-image: url();
+}
+.molhos{
+    list-style-type: upper-roman;/* decimal - lower-roman - upper-roman*/
 }
