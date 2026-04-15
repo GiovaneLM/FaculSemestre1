@@ -1,0 +1,29 @@
+.info{
+    background-color: #000;
+    color: #fff;
+    width: 60%;
+    height: 600px;
+    background-image: url(imagens/et.png);
+    background-repeat: no-repeat;
+    /*repeat - repeat-x - repeat-y - no-repeat */
+    background-position: center bottom;
+    /* left - right - top - bottom - center */
+}
+.info h2{
+    background-color: #f60;
+}
+body{
+    background-color: #ddd;
+    background-image: url(imagens/montanha.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed; /* scroll - fixed */ 
+    background-position: -50%;
+}
+.card{
+    width: 60%;
+    height: 300px;
+    background-image: url(imagens/montanha.jpg);
+    background-size: cover;
+    background-position: -50%;
+}

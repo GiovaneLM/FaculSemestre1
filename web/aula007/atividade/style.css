@@ -1,0 +1,35 @@
+*{ 
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão global */
+    padding: 0; /* Remove padding padrão de todos os elementos */
+    margin: 0; /* Remove margin padrão de todos os elementos */
+}
+
+body{
+    background-image: url(img/star.png); /* Aplica a imagem de fundo (estrelas) */
+    background-color: rgb(27, 25, 73); /* Cor de fallback caso a imagem não carregue */
+    background-size: cover; /* Faz a imagem cobrir toda a área da tela */
+
+    display: flex; /* Ativa Flexbox para controle de layout */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 75vh; /* Define altura como 75% da viewport (não ocupa tela toda) */
+}
+
+h1{
+    background-image: url(img/nave.png); /* Define a nave como fundo do título */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-position: top center; /* Posiciona a nave no topo central */
+    background-size: 400px; /* Define um tamanho grande para a nave */
+
+    color: white; /* Cor do texto */
+    font-size: 48px; /* Tamanho do texto */
+
+    padding-top: 500px; /* Empurra o texto pra baixo pra dar espaço pra nave */
+    text-align: center; /* Centraliza o texto */
+}
+
+span{
+    background-color: rgb(255, 102, 0); /* Cor de destaque (laranja) */
+    padding: 5px 10px; /* Espaçamento interno para dar efeito de "badge" */
+    border-radius: 4px; /* Bordas levemente arredondadas */
+}
