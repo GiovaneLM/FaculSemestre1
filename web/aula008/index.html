@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        .coluna p{
+            font-size: 18px;
+            vertical-align: top;/*top - bottom - sub - super - middle*/
+        }
+        h1{
+            font-size: 52px;
+        }
+        .sub span{
+            vertical-align: sub;
+            font-size: 36px;
+        }
+        .super span{
+            vertical-align: super;
+            font-size: 48px;
+        }
+        .bloco{
+            background: #333;
+            color: #fff;
+            width: 200px;
+            /*margin-top: 40px;
+            margin-right: 40px;
+            margin-bottom: 60px;
+            margin-left: 40px;*/
+            /*margin: 40px 40px 60px 40px;*/
+            /*margin: 60px 40px;*/
+            margin: 80px;
+
+            /*padding-top: 40px;
+            padding-right: 20px;
+            padding-bottom: 40px;
+            padding-left: 20px;*/
+            /*padding: 40px 20px 40px 20px;*/
+            /*padding: 40px 20px;*/
+            padding: 25px;
+            float: left;
+            text-align: center;
+            border: double 8px #f00;
+            /* solid - dashed - dotted - double*/
+            /* groove - ridge - inset - */
+        }
+        .bloco h2{
+            margin: 0;
+            margin-top: -30px;
+        }
+        .container{
+            border-top: solid 10px red;
+            border-bottom: double 8px green;
+            overflow: hidden;
+            width: 70%;
+            background: #ddd;
+            /*margin-right: auto;
+            margin-left: auto;*/
+            margin: 0 auto;
+        }
+        .menu a{
+            margin: 40px 25px;
+            padding: 20px;
+            background: #000;
+            color: #fff;
+            width: 200px;
+            height: 200px;
+            /*display: block;*/
+            text-decoration: none;
+        }
+    </style>
+    <title>Continuando Com CSS</title>
+</head>
+<body>
+    <div class="menu">
+        <a href="#">HOME</a>
+        <a href="#">Empresa</a>
+        <a href="#">Contato</a>
+    </div>
+<div class="container">
+    
+        <div class="bloco cima">
+            <img src="img/et.png" alt="Alien Roxo">
+            <h2>Alien Bravo</h2>
+        </div>
+    
+        <div class="bloco">
+            <img src="img/et.png" alt="Alien Roxo">
+            <h2>Alien Raiva</h2>
+        </div>
+</div>
+
+    <h1 class="super"> 
+        5<span>X</span>
+    </h1>
+
+    <h1 class="sub">
+        H<span>2</span>O
+    </h1>
+
+    <div class="coluna">
+        <p> 
+                <img src="img/et.png" alt="ET Roxo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, perferendis nesciunt fuga ab atque ratione quis earum? Facilis maxime corporis optio quis? Ratione dolore eius nesciunt incidunt sapiente dolores quibusdam.</p>
+    </div>
+
+</body>
+</html>
