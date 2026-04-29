@@ -1,0 +1,120 @@
+/* Define estilo global da página */
+body{
+    font-family: Arial, Helvetica, sans-serif; /* Fonte padrão do site */
+    margin: 0; /* Remove margem padrão do navegador */
+}
+
+/* Container do topo (header) */
+.topo{
+    background: #ddd; /* Cor de fundo cinza claro */
+    text-align: center; /* Centraliza todo conteúdo dentro */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilo da logo */
+.logo{
+    font-size: 42px; /* Tamanho grande do texto */
+    font-weight: bold; /* Texto em negrito */
+    color: #333; /* Cor do texto (cinza escuro) */
+    width: 250px; /* Largura fixa */
+    margin:  0 auto; /* Centraliza horizontalmente */
+}
+
+/* Remove estilos padrão da lista do menu */
+.menu ul{
+    padding: 0; /* Remove espaçamento interno */
+    list-style: none; /* Remove bolinhas da lista */
+    margin-top: 35px; /* Espaço acima do menu */
+}
+
+/* Cada item do menu */
+.menu li{
+    display: inline-block; /* Coloca itens lado a lado */
+}
+
+/* Links do menu */
+.menu li a{
+    padding: 5px 15px; /* Espaçamento interno do link */
+    font-size: 20px; /* Tamanho do texto */
+    text-decoration: none; /* Remove sublinhado */
+    color: #333; /* Cor padrão do texto */
+}
+
+/* hover - é o evento que dispara ao colocar o mouse em cima */
+.menu li a:hover{
+    color: #f60; /* Muda cor do texto (laranja) */
+    border-bottom: solid 3px #f60; /* Linha embaixo do link */
+}
+
+/* Efeito ao passar mouse na logo */
+.logo:hover{
+    font-style: italic; /* Deixa texto em itálico */
+    color: #f60; /* Muda cor para laranja */
+    cursor: pointer; /* Muda cursor para "clicável" */
+}
+
+/* Colunas de conteúdo */
+.coluna{
+    color: #fff; /* Texto branco */
+    width: 28%; /* Largura de cada coluna */
+    text-align: center; /* Centraliza conteúdo */
+    float: left; /* Faz colunas ficarem lado a lado */
+    margin: 40px 20px; /* Espaçamento externo */
+    padding: 20px; /* Espaçamento interno */
+    
+    /* Faz padding e border entrarem no cálculo da largura */
+    box-sizing: border-box;
+}
+
+/* Estilo do card (caixa visual) */
+.card{
+    background: #333; /* Fundo escuro */
+    border: solid 2px #fff; /* Borda branca */
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 5px 5px 10px 1px #000; /* Sombra externa */
+}
+
+/* Efeito ao passar mouse no card */
+.card:hover{
+    box-shadow: 8px 8px 16px #000; /* Aumenta sombra (efeito destaque) */
+}
+
+/* Container geral das colunas */
+.Servicos{
+    overflow: hidden; /* Resolve problema do float (clearfix simples) */
+}
+
+/* Botão */
+.bt{
+    background: #c87cda; /* Cor de fundo roxa */
+    color: #fff; /* Texto branco */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 24px; /* Tamanho do texto */
+    padding: 15px 30px; /* Espaçamento interno */
+    text-align: center; /* Centraliza texto */
+    display: block; /* Faz ocupar linha inteira */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    width: 150px; /* Largura fixa */
+    text-align: center; /* Centraliza texto (redundante, mas ok) */
+    
+    /* Sombra interna (efeito pressionado) */
+    box-shadow: inset 2px 2px 8px #000;
+    
+    /* Sombra no texto */
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* Efeito hover no botão */
+.bt:hover{
+    background: #fff; /* Fundo branco */
+    border: solid 1px #c87cda; /* Borda roxa */
+    color: #c87cda; /* Texto roxo */
+    
+    /* Aumenta sombra interna */
+    box-shadow: inset 4px 4px 8px #000;
+    
+    border-radius: 8px; /* Bordas levemente arredondadas */
+    
+    /* Reduz sombra do texto */
+    text-shadow: 0 0 1px #000;
+}

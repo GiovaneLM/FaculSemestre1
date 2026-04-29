@@ -4,3 +4,4 @@ No final, mostre o nome e a altura das pessoas mais altas e
 das mais baixas. Informe também a altura média.
 """
 
+
