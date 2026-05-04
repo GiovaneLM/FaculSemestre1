@@ -1,0 +1,45 @@
+Desafios 1
+1
+2 1
+3 2 1
+4 3 2 1
+5 4 3 2 1
+
+   ##
+  ####
+ ######
+########
+ ######
+  ####
+   ##
+
+       #
+      ###
+     #####
+    #######
+   ##     ##
+  ###     ###
+#####     #####
+ ####     ####
+  ###     ###
+   ##     ##
+    #######
+     #####
+      ###
+       #
+
+
+
+Desafios 2
+
+Exercício 1:
+Faça um algoritmo que leia uma quantidade indeterminada de números (finalize quando digitado a palavra 'fim')
+No final diga:
+quantos números negativos foram digitados,
+quantos números pares,
+quantos números digitados estão no intervalo de 10 e 30, ou no intervalo de 50 e 70.
+ 
+Exercício 2:
+Faça um algoritmo que leia o nome de 8 alunos e a quantidade de acertos de uma prova de 10 questões.
+No final diga quantos alunos obtiveram a nota superior a 70% da prova,
+A nota deve ser um inteiro entre 0 e 10. 
