@@ -9,28 +9,28 @@
 
 
 
-# l_nomes=['ana', 'maria', 'juca', 'pedro', 'mario']
-# l_idades=[22, 44, 57, 36, 68]
+l_nomes=['ana', 'maria', 'juca', 'pedro', 'mario']
+l_idades=[22, 44, 57, 36, 68]
 
-# while True:
-#     # nome=input("nome: ")
-#     # idade=int(input("idade: "))
+while True:
+    nome=input("nome: ")
+    idade=int(input("idade: "))
 
-#     # l_nomes.append(nome)
-#     # l_idades.append(idade)
+    l_nomes.append(nome)
+    l_idades.append(idade)
 
-#     print(l_nomes)
-#     print(l_idades)
+    print(l_nomes)
+    print(l_idades)
 
-#     nome_aux=input("nome para localizar: ")
-#     if nome_aux in l_nomes:
-#         for nome in l_nomes:
-#             if nome_aux == nome:
-#                 pos=l_nomes.index(nome_aux)
-#                 idade=l_idades[pos]
-#                 print(f"achei {nome} na posição : {pos} idade: {idade}")
-#     else:
-#         print("nome nao encontrado")
+    nome_aux=input("nome para localizar: ")
+    if nome_aux in l_nomes:
+        for nome in l_nomes:
+            if nome_aux == nome:
+                pos=l_nomes.index(nome_aux)
+                idade=l_idades[pos]
+                print(f"achei {nome} na posição : {pos} idade: {idade}")
+    else:
+        print("nome nao encontrado")
 
 
 
@@ -86,3 +86,4 @@ while True:
     print(l_nomes)
     print(l_idades)
     break
+
