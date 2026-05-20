@@ -1,0 +1,24 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: linear-gradient(132deg, rgb(135 44 215) , rgb(66 19 104)49% , rgb(52 8 88)50% , rgb(91 31 151));
+
+}
+.lista img{
+    width: 20px;
+    height: 20px;
+}
+
+.foto{
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+}
+.foto img{
+    width: 200px;
+    height: 200px;
+}
