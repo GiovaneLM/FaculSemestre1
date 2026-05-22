@@ -26,55 +26,30 @@ while True:
     except ValueError:
         print("valor invalido")
         continue
-
     professores=[]
-    nota_professor=[]
-
-
     for i in range(qtd_professor):
         nome=input("qual o nome do nome professor: ")
-        professores.append(nome)
         notaF=0
         for j in range(qtd_aluno):
-            nota=int(input(f"{j+1}° Aluno Digite a nota do professoar {professores[i]}  (entre 1 e 5): "))
-            notaF += nota
-        nota_professor.append(notaF)
-
+            while True:
+                try:
+                    nota=int(input(f"{j+1}° Aluno Digite a nota do professoar {nome}  (entre 1 e 5): "))
+                    if nota <= 5 or 1 <= nota: 
+                        notaF += nota
+                        break
+                    else:
+                        print('valor nao esta entre o intervalo digitado')
+                        continue
+                except:
+                    print('Valor invalido')
+                    continue
+        media=notaF/qtd_aluno
+        professores.append([nome,notaF,media])
         print(professores)
-        print(nota_professor)
-    for l in range(qtd_professor) :
-        print(f"professor:  {professores[l]}  notas: {nota_professor[l]}   media:  {nota_professor[l]/qtd_aluno} ")
+    professores.sort(key=lambda x: x[2])
+    for l in range(qtd_professor):
+        print(f"professor:  {professores[l][0]}  notas: {professores[l][1]}   media:  {professores[l][2]} ")
     print("Obrigado por usar nosso sistema \nAdeus")
     break
 
 
-
-'''
-while True:
-    try:
-        qtd_professor=int(input("digite quantos professores teram : "))
-        qtd_aluno=int(input("digite quantos alunos teram : "))
-    except ValueError:
-        print("valor invalido")
-        continue
-    nome_professor=[]
-    professores=[]
-
-
-    for i in range(qtd_professor):
-        while True:
-            nota=0
-            nome=input("qual o nome do nome professor: ")
-            nome_professor.append(nome)
-            for j in range(qtd_aluno):
-                nota=int(input(f"{j+1}° Aluno Digite a nota do professoar {nome_professor[i]}  (entre 1 e 5): "))
-                nota += nota
-            media=nota/qtd_aluno
-            professores.append(nome,nota,media)
-
-    professores.sort(key=lambda x: x[2])
-
-    for l in range(qtd_professor) :
-        print(f"professor:  {professores[l]}  notas: {professores[l]}   media:  {professores[l]} ")
-    print("Obrigado por usar nosso sistema \nAdeus")
-    break'''
